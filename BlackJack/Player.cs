@@ -44,7 +44,7 @@ namespace BlackJack
         {
             foreach (var c in cards)
             {
-                Console.WriteLine("\t" + c.name);
+                Console.WriteLine("\t" + c.name + " " + c.suit);
             }
             Console.WriteLine();
             Console.WriteLine("\tВаши деньги " + money + "$");

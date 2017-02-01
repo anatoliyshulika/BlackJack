@@ -82,12 +82,12 @@ namespace BlackJack
             {
                 foreach (var c in cards)
                 {
-                    Console.WriteLine("\t" + c.name);
+                    Console.WriteLine("\t" + c.name + " " + c.suit);
                 }
             }
             else
             {
-                Console.WriteLine("\t" + cards[0].name);
+                Console.WriteLine("\t" + cards[0].name + " " + cards[0].suit);
                 Console.WriteLine("\tСкрытая карта");
             }
         }
