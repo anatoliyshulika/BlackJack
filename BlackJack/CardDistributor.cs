@@ -17,7 +17,7 @@ namespace BlackJack
         {
             if(20 >= cardDeck.Count)
             {
-                cardDeck = CardDeckMaker.GetCardDeck(52);
+                cardDeck = CardDeckMaker.GetCardDeck();
             }
             int numberOfCard;
             Random rnd = new Random();

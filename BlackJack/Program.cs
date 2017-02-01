@@ -13,8 +13,7 @@ namespace BlackJack
         static void Main(string[] args)
         {
             int numberOfPlayers = 2;
-            int numberOfCards = 52;
-            CardDistributor cardDistributor = new CardDistributor(CardDeckMaker.GetCardDeck(numberOfCards));
+            CardDistributor cardDistributor = new CardDistributor(CardDeckMaker.GetCardDeck());
             Diller diller = new Diller(cardDistributor, numberOfPlayers);
             Player player = new Player(diller, cardDistributor);
             diller.ConnectWithPlayer = player;
@@ -23,6 +22,7 @@ namespace BlackJack
             {
                 Console.Clear();
                 Console.WriteLine("\tКарты диллера");
+                Console.WriteLine();
                 diller.ShowCards();
                 Console.WriteLine();
                 Console.WriteLine();
@@ -30,6 +30,7 @@ namespace BlackJack
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine("\tВаши карты");
+                Console.WriteLine();
                 player.ShowCards();
                 Console.WriteLine();
                 Console.WriteLine("\tЧтобы взять карту, нажмите 1");

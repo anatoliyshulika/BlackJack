@@ -46,6 +46,7 @@ namespace BlackJack
             {
                 Console.WriteLine("\t" + c.name);
             }
+            Console.WriteLine();
             Console.WriteLine("\tВаши деньги " + money + "$");
             Console.WriteLine("\tВаша ставка " + bet + "$");
         }
